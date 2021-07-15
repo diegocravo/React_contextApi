@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { ToggleProvider } from './context/ToggleProvider';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ToggleProvider>
+      <App />
+    </ToggleProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
